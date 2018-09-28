@@ -1,3 +1,3 @@
-# notepad
+# Lottery
 
-Assemble a boilerplate package to develop, compile, and test Smart Contracts.
+Lottery Dapp
