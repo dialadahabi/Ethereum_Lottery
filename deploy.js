@@ -13,6 +13,7 @@ const deploy = async() => {
 	.deploy({data: bytecode})
 	.send({gas: '1000000', from: fetchedAccounts[0]});
 
+	console.log(interface);
 	console.log('Contract Deployed to: ', result.options.address);
 };
 deploy();
