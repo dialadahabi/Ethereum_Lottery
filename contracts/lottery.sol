@@ -26,7 +26,8 @@ contract Lottery {
     function chooseWinner() public auth {
         uint winner = random() % members.length;
         //send money entered into lottery from current contract to winner's contract
-        members[winner].transfer(this.balance); 
+        members[winner].transfer(this.balance);
+        lastWinner = members[index]; 
         //dynamic array with initial size 0
         members = new address[](0);
     }
